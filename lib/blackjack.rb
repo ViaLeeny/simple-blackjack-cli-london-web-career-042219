@@ -23,13 +23,12 @@ puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
 def initial_round
- card1= deal_card 
- card2 = deal_card
-  card_total = card1 + card2
+  card_one = deal_card
+  card_two = deal_card
+  card_total = card_one + card_two
+  display_card_total(card_total) 
   return card_total
-  prinyt display_card_total(card_total)
 end
-
 def hit? (card_total)
   prompt_user
   user_input = get_user_input
